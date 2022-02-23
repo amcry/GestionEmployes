@@ -58,10 +58,10 @@ namespace GestionEmploye.DataAccess
         {
             return new List<Role>
                 {
-                    new Role { Id = 1, Nom = "Chanteur" },
-                    new Role { Id = 2, Nom = "Guitariste" },
-                    new Role { Id = 3, Nom = "Bassiste" },
-                    new Role { Id = 4, Nom = "Batteur" }
+                    new Role { IdRole = 1, Nom = "Chanteur" },
+                    new Role { IdRole = 2, Nom = "Guitariste" },
+                    new Role { IdRole = 3, Nom = "Bassiste" },
+                    new Role { IdRole = 4, Nom = "Batteur" }
                 };
         }
 

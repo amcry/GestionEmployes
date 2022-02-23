@@ -1,4 +1,5 @@
 ﻿using GestionEmploye.Common;
+using GestionEmploye.Common.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
@@ -23,6 +24,7 @@ namespace GestionEmploye.DataAccess
                 EnableSensitiveDataLogging(); 
         }
 
-        DbSet<Employe> Employes { get; set; }
+        public DbSet<Employe> Employes { get; set; }
+        public DbSet<Role> Roles { get; set; }
     }
 }

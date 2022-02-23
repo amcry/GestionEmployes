@@ -11,10 +11,12 @@ namespace GestionEmploye.Common.Model
     //[Table(nameof(Role))]
     public class Role
     {
-        //[Key]
-        public int Id { get; set; }
+        [Key]
+        public int IdRole { get; set; }
 
         //[Required, MaxLength(255)]
         public string Nom { get; set; }
+
+        public ICollection<Employe> Employes { get; set; }
     }
 }
